@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD6F5D97202005D6008B8B93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6F5D96202005D6008B8B93 /* AppDelegate.m */; };
+		CD6F5D9A202005D7008B8B93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6F5D99202005D7008B8B93 /* ViewController.m */; };
+		CD6F5D9D202005D7008B8B93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F5D9B202005D7008B8B93 /* Main.storyboard */; };
+		CD6F5D9F202005D7008B8B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6F5D9E202005D7008B8B93 /* Assets.xcassets */; };
+		CD6F5DA2202005D7008B8B93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F5DA0202005D7008B8B93 /* LaunchScreen.storyboard */; };
+		CD6F5DA5202005D7008B8B93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6F5DA4202005D7008B8B93 /* main.m */; };
+		D156DFC184AAB0B2052F51EE /* Pods_LineChartView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE7C43EBC04F92DF8B008B2 /* Pods_LineChartView.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C0206C007FEA24E631F7018 /* Pods-LineChartView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChartView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LineChartView/Pods-LineChartView.debug.xcconfig"; sourceTree = "<group>"; };
+		2EE7C43EBC04F92DF8B008B2 /* Pods_LineChartView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineChartView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8702238CE46A2E3916F1BB3D /* Pods-LineChartView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChartView.release.xcconfig"; path = "Pods/Target Support Files/Pods-LineChartView/Pods-LineChartView.release.xcconfig"; sourceTree = "<group>"; };
+		CD6F5D92202005D6008B8B93 /* LineChartView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LineChartView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6F5D95202005D6008B8B93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD6F5D96202005D6008B8B93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD6F5D98202005D7008B8B93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CD6F5D99202005D7008B8B93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CD6F5D9C202005D7008B8B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD6F5D9E202005D7008B8B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD6F5DA1202005D7008B8B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD6F5DA3202005D7008B8B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD6F5DA4202005D7008B8B93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD993ED62020339A0014FF5F /* LineChartView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LineChartView-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD6F5D8F202005D6008B8B93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D156DFC184AAB0B2052F51EE /* Pods_LineChartView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DE7BE07FD635DECDA9232D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EE7C43EBC04F92DF8B008B2 /* Pods_LineChartView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B434CC3F3F43FB089524495 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C0206C007FEA24E631F7018 /* Pods-LineChartView.debug.xcconfig */,
+				8702238CE46A2E3916F1BB3D /* Pods-LineChartView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD6F5D89202005D6008B8B93 = {
+			isa = PBXGroup;
+			children = (
+				CD6F5D94202005D6008B8B93 /* LineChartView */,
+				CD6F5D93202005D6008B8B93 /* Products */,
+				7B434CC3F3F43FB089524495 /* Pods */,
+				3DE7BE07FD635DECDA9232D9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD6F5D93202005D6008B8B93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F5D92202005D6008B8B93 /* LineChartView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD6F5D94202005D6008B8B93 /* LineChartView */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F5D95202005D6008B8B93 /* AppDelegate.h */,
+				CD6F5D96202005D6008B8B93 /* AppDelegate.m */,
+				CD6F5D98202005D7008B8B93 /* ViewController.h */,
+				CD6F5D99202005D7008B8B93 /* ViewController.m */,
+				CD6F5D9B202005D7008B8B93 /* Main.storyboard */,
+				CD6F5D9E202005D7008B8B93 /* Assets.xcassets */,
+				CD6F5DA0202005D7008B8B93 /* LaunchScreen.storyboard */,
+				CD6F5DA3202005D7008B8B93 /* Info.plist */,
+				CD6F5DA4202005D7008B8B93 /* main.m */,
+				CD993ED62020339A0014FF5F /* LineChartView-Bridging-Header.h */,
+			);
+			path = LineChartView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD6F5D91202005D6008B8B93 /* LineChartView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD6F5DA8202005D7008B8B93 /* Build configuration list for PBXNativeTarget "LineChartView" */;
+			buildPhases = (
+				AF95B9621CB290E16558A34A /* [CP] Check Pods Manifest.lock */,
+				CD6F5D8E202005D6008B8B93 /* Sources */,
+				CD6F5D8F202005D6008B8B93 /* Frameworks */,
+				CD6F5D90202005D6008B8B93 /* Resources */,
+				7FE35E1E7A3585D5AF618ED6 /* [CP] Embed Pods Frameworks */,
+				20F5FFF2637CBCF9B6A42C03 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LineChartView;
+			productName = LineChartView;
+			productReference = CD6F5D92202005D6008B8B93 /* LineChartView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD6F5D8A202005D6008B8B93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = ginlong;
+				TargetAttributes = {
+					CD6F5D91202005D6008B8B93 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CD6F5D8D202005D6008B8B93 /* Build configuration list for PBXProject "LineChartView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD6F5D89202005D6008B8B93;
+			productRefGroup = CD6F5D93202005D6008B8B93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD6F5D91202005D6008B8B93 /* LineChartView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD6F5D90202005D6008B8B93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6F5DA2202005D7008B8B93 /* LaunchScreen.storyboard in Resources */,
+				CD6F5D9F202005D7008B8B93 /* Assets.xcassets in Resources */,
+				CD6F5D9D202005D7008B8B93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20F5FFF2637CBCF9B6A42C03 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LineChartView/Pods-LineChartView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FE35E1E7A3585D5AF618ED6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LineChartView/Pods-LineChartView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LineChartView/Pods-LineChartView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF95B9621CB290E16558A34A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LineChartView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD6F5D8E202005D6008B8B93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6F5D9A202005D7008B8B93 /* ViewController.m in Sources */,
+				CD6F5DA5202005D7008B8B93 /* main.m in Sources */,
+				CD6F5D97202005D6008B8B93 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD6F5D9B202005D7008B8B93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD6F5D9C202005D7008B8B93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD6F5DA0202005D7008B8B93 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD6F5DA1202005D7008B8B93 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD6F5DA6202005D7008B8B93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD6F5DA7202005D7008B8B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD6F5DA9202005D7008B8B93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C0206C007FEA24E631F7018 /* Pods-LineChartView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MS6RTU94VW;
+				INFOPLIST_FILE = LineChartView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ginlong.LineChartView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LineChartView/LineChartView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD6F5DAA202005D7008B8B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8702238CE46A2E3916F1BB3D /* Pods-LineChartView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MS6RTU94VW;
+				INFOPLIST_FILE = LineChartView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ginlong.LineChartView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LineChartView/LineChartView-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD6F5D8D202005D6008B8B93 /* Build configuration list for PBXProject "LineChartView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6F5DA6202005D7008B8B93 /* Debug */,
+				CD6F5DA7202005D7008B8B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD6F5DA8202005D7008B8B93 /* Build configuration list for PBXNativeTarget "LineChartView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6F5DA9202005D7008B8B93 /* Debug */,
+				CD6F5DAA202005D7008B8B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD6F5D8A202005D6008B8B93 /* Project object */;
+}
