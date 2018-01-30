@@ -1,4 +1,4 @@
-## 基于Charts - iOS图表二次定制 - 波浪折线图
+## pod 'Charts' - iOS图表二次定制 - 波浪折线图
 
 ![000](https://github.com/XLsn0wKit/LineChart/blob/master/Screen%20Shot%20000.png?raw=true)
 ![999](https://github.com/XLsn0wKit/LineChart/blob/master/Screen%20Shot%20999.png?raw=true)
