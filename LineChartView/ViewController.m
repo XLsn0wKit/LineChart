@@ -6,9 +6,19 @@
 //  Copyright © 2018年 ginlong. All rights reserved.
 //
 
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define kShineColor [UIColor blueColor]
+#define kBatteryColor [UIColor greenColor]
+#define kEGridColor [UIColor yellowColor]
+#define kUserColor [UIColor redColor]
+#define kBatteryAmountColor [UIColor cyanColor]
+#define kSpontaneousUserUsColor [UIColor magentaColor]
+
 #import "ViewController.h"
-#import <Charts/Charts-Swift.h>
-//#import "LineChartView-Swift.h"///调用swift
+#import <Charts/Charts-Swift.h>   ///引入框架 由于是swift objc要对应 框架名-Swift
+//#import "LineChartView-Swift.h" ///调用swift  工程名-Swift
 
 @interface ViewController () <ChartViewDelegate>
 
@@ -21,17 +31,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    _lineChartView = [[LineChartView alloc] initWithFrame:(CGRectMake(0, 100, 375, 600))];
+    _lineChartView = [[LineChartView alloc] initWithFrame:(CGRectMake(0, 100, kScreenWidth, kScreenHeight-200))];
     [self.view addSubview:_lineChartView];
     _lineChartView.delegate = self;
-    
     _lineChartView.chartDescription.enabled = NO;
-    
     _lineChartView.dragEnabled = YES;
     [_lineChartView setScaleEnabled:YES];
     _lineChartView.drawGridBackgroundEnabled = NO;
     _lineChartView.pinchZoomEnabled = YES;
-    
     _lineChartView.backgroundColor = [UIColor whiteColor];
     
 //    BalloonMarker *marker = [[BalloonMarker alloc]
@@ -155,13 +162,13 @@
     } else {
         set1 = [[LineChartDataSet alloc] initWithValues:yVals1 label:@"光伏"];
         set1.axisDependency = AxisDependencyLeft;
-        [set1 setColor:[UIColor blueColor]];
+        [set1 setColor:kShineColor];
         [set1 setCircleColor:UIColor.whiteColor];
         set1.lineWidth = 2.0;
         set1.circleRadius = 3.0;
         set1.fillAlpha = 65/255.0;
-        set1.fillColor = [UIColor blueColor];
-        set1.highlightColor = [UIColor blueColor];
+        set1.fillColor = kShineColor;
+        set1.highlightColor = kShineColor;
         set1.drawCircleHoleEnabled = NO;
         set1.drawCirclesEnabled = false;
         set1.drawValuesEnabled = false;
@@ -170,60 +177,57 @@
         
         set2 = [[LineChartDataSet alloc] initWithValues:yVals2 label:@"电池"];
         set2.axisDependency = AxisDependencyLeft;
-        [set2 setColor:UIColor.greenColor];
+        [set2 setColor:kBatteryColor];
         [set2 setCircleColor:UIColor.whiteColor];
         set2.lineWidth = 2.0;
         set2.circleRadius = 3.0;
         set2.fillAlpha = 65/255.0;
-        set2.fillColor = UIColor.yellowColor;
-        set2.highlightColor = [UIColor colorWithRed:244/255.f green:117/255.f blue:117/255.f alpha:1.f];
+        set2.fillColor = kBatteryColor;
+        set2.highlightColor = kBatteryColor;
         set2.drawCircleHoleEnabled = NO;
         set2.drawCirclesEnabled = false;
         set2.drawValuesEnabled = false;
         set2.drawFilledEnabled = YES;
-        set2.fillColor = [UIColor greenColor];
         set2.mode = LineChartModeHorizontalBezier;
         
         set3 = [[LineChartDataSet alloc] initWithValues:yVals3 label:@"电网"];
         set3.axisDependency = AxisDependencyLeft;
-        [set3 setColor:UIColor.yellowColor];
+        [set3 setColor:kEGridColor];
         [set3 setCircleColor:UIColor.whiteColor];
         set3.lineWidth = 2.0;
         set3.circleRadius = 3.0;
         set3.fillAlpha = 65/255.0;
-        set3.fillColor = [UIColor blueColor];
-        set3.highlightColor = [UIColor yellowColor];
+        set3.fillColor = kEGridColor;
+        set3.highlightColor = kEGridColor;
         set3.drawCircleHoleEnabled = NO;
         set3.drawCirclesEnabled = false;
         set3.drawValuesEnabled = false;
-        set3.drawFilledEnabled = YES;
-        set3.fillColor = [UIColor yellowColor];
+        set3.drawFilledEnabled = true;
         set3.mode = LineChartModeHorizontalBezier;
         
         set4 = [[LineChartDataSet alloc] initWithValues:yVals4 label:@"用户"];
         set4.axisDependency = AxisDependencyLeft;
-        [set4 setColor:[UIColor redColor]];
+        [set4 setColor:kUserColor];
         [set4 setCircleColor:UIColor.whiteColor];
         set4.lineWidth = 2.0;
         set4.circleRadius = 3.0;
         set4.fillAlpha = 65/255.0;
-        set4.fillColor = [UIColor redColor];
-        set4.highlightColor = [UIColor colorWithRed:244/255.f green:117/255.f blue:117/255.f alpha:1.f];
+        set4.fillColor = kUserColor;
+        set4.highlightColor = kUserColor;
         set4.drawCircleHoleEnabled = NO;
         set4.drawCirclesEnabled = false;
         set4.drawValuesEnabled = false;
-        set4.drawFilledEnabled = YES;
-        set4.fillColor = [UIColor redColor];
+        set4.drawFilledEnabled = true;
         set4.mode = LineChartModeHorizontalBezier;
         
         set5 = [[LineChartDataSet alloc] initWithValues:yVals5 label:@"电池量"];
         set5.axisDependency = AxisDependencyRight;
-        [set5 setColor:[UIColor cyanColor]];
+        [set5 setColor:kBatteryAmountColor];
         [set5 setCircleColor:UIColor.whiteColor];
         set5.lineWidth = 2.0;
         set5.circleRadius = 3.0;
         set5.fillAlpha = 65/255.0;
-        set5.highlightColor = [UIColor cyanColor];
+        set5.highlightColor = kBatteryAmountColor;
         set5.drawCircleHoleEnabled = NO;
         set5.drawCirclesEnabled = false;
         set5.drawValuesEnabled = false;
@@ -231,12 +235,12 @@
         
         set6 = [[LineChartDataSet alloc] initWithValues:yVals6 label:@"自发用户"];
         set6.axisDependency = AxisDependencyRight;
-        [set6 setColor:[UIColor orangeColor]];
+        [set6 setColor:kSpontaneousUserUsColor];
         [set6 setCircleColor:UIColor.whiteColor];
         set6.lineWidth = 2.0;
         set6.circleRadius = 3.0;
         set6.fillAlpha = 65/255.0;
-        set6.highlightColor = [UIColor colorWithRed:244/255.f green:117/255.f blue:117/255.f alpha:1.f];
+        set6.highlightColor = kSpontaneousUserUsColor;
         set6.drawCircleHoleEnabled = NO;
         set6.drawCirclesEnabled = false;
         set6.drawValuesEnabled = false;
