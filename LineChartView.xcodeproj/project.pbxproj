@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD00F1992020633C009363BB /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00F1982020633B009363BB /* BalloonMarker.swift */; };
+		CD00F19B202063ED009363BB /* Build Settings - Swift Version.png in Resources */ = {isa = PBXBuildFile; fileRef = CD00F19A202063ED009363BB /* Build Settings - Swift Version.png */; };
 		CD6F5D97202005D6008B8B93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6F5D96202005D6008B8B93 /* AppDelegate.m */; };
 		CD6F5D9A202005D7008B8B93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6F5D99202005D7008B8B93 /* ViewController.m */; };
 		CD6F5D9D202005D7008B8B93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F5D9B202005D7008B8B93 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 		0C0206C007FEA24E631F7018 /* Pods-LineChartView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChartView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LineChartView/Pods-LineChartView.debug.xcconfig"; sourceTree = "<group>"; };
 		2EE7C43EBC04F92DF8B008B2 /* Pods_LineChartView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineChartView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8702238CE46A2E3916F1BB3D /* Pods-LineChartView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineChartView.release.xcconfig"; path = "Pods/Target Support Files/Pods-LineChartView/Pods-LineChartView.release.xcconfig"; sourceTree = "<group>"; };
+		CD00F1982020633B009363BB /* BalloonMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		CD00F19A202063ED009363BB /* Build Settings - Swift Version.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Build Settings - Swift Version.png"; sourceTree = "<group>"; };
 		CD6F5D92202005D6008B8B93 /* LineChartView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LineChartView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6F5D95202005D6008B8B93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD6F5D96202005D6008B8B93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				CD6F5D96202005D6008B8B93 /* AppDelegate.m */,
 				CD6F5D98202005D7008B8B93 /* ViewController.h */,
 				CD6F5D99202005D7008B8B93 /* ViewController.m */,
+				CD00F1982020633B009363BB /* BalloonMarker.swift */,
+				CD00F19A202063ED009363BB /* Build Settings - Swift Version.png */,
 				CD6F5D9B202005D7008B8B93 /* Main.storyboard */,
 				CD6F5D9E202005D7008B8B93 /* Assets.xcassets */,
 				CD6F5DA0202005D7008B8B93 /* LaunchScreen.storyboard */,
@@ -162,6 +168,7 @@
 				CD6F5DA2202005D7008B8B93 /* LaunchScreen.storyboard in Resources */,
 				CD6F5D9F202005D7008B8B93 /* Assets.xcassets in Resources */,
 				CD6F5D9D202005D7008B8B93 /* Main.storyboard in Resources */,
+				CD00F19B202063ED009363BB /* Build Settings - Swift Version.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +236,7 @@
 				CD6F5D9A202005D7008B8B93 /* ViewController.m in Sources */,
 				CD6F5DA5202005D7008B8B93 /* main.m in Sources */,
 				CD6F5D97202005D6008B8B93 /* AppDelegate.m in Sources */,
+				CD00F1992020633C009363BB /* BalloonMarker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +380,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LineChartView/LineChartView-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -390,7 +398,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ginlong.LineChartView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LineChartView/LineChartView-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

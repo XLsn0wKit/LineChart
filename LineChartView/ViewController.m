@@ -17,8 +17,8 @@
 #define kSpontaneousUserUsColor [UIColor magentaColor]
 
 #import "ViewController.h"
-#import <Charts/Charts-Swift.h>   ///引入框架 由于是swift objc要对应 框架名-Swift
-//#import "LineChartView-Swift.h" ///调用swift  工程名-Swift
+#import <Charts/Charts-Swift.h>  ///引入框架 由于是swift objc要对应 框架名-Swift
+#import "LineChartView-Swift.h"  ///调用swift类-BalloonMarker    工程名-Swift
 
 @interface ViewController () <ChartViewDelegate>
 
@@ -41,14 +41,15 @@
     _lineChartView.pinchZoomEnabled = YES;
     _lineChartView.backgroundColor = [UIColor whiteColor];
     
-//    BalloonMarker *marker = [[BalloonMarker alloc]
-//                             initWithColor: [UIColor whiteColor]
-//                             font: [UIFont systemFontOfSize:12.0]
-//                             textColor: UIColor.redColor
-//                             insets: UIEdgeInsetsMake(8.0, 8.0, 20.0, 8.0)];
-//    marker.chartView = _lineChartView;
-//    marker.minimumSize = CGSizeMake(80.f, 40.f);
-//    _lineChartView.marker = marker;
+    ///Type 'NSAttributedStringKey' (aka 'NSString') has no member 'font'
+    ///https://stackoverflow.com/questions/46520306/type-nsattributedstringkey-aka-nsstring-has-no-member-font
+    BalloonMarker *marker = [[BalloonMarker alloc] initWithColor: [UIColor whiteColor]
+                                                            font: [UIFont boldSystemFontOfSize:12]
+                                                       textColor: UIColor.whiteColor
+                                                          insets: UIEdgeInsetsMake(8.0, 8.0, 20.0, 8.0)];
+    marker.chartView = _lineChartView;
+    _lineChartView.marker = marker;
+    marker.minimumSize = CGSizeMake(80.f, 40.f);
     
     ChartLegend *l = _lineChartView.legend;
     l.form = ChartLegendFormSquare;
